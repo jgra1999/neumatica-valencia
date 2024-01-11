@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import { Bars3Icon } from '@heroicons/react/24/solid';
+---
+
+<nav class='bg-white w-full flex justify-between items-center py-2 px-4 shadow-lg' >
+     <div class='flex justify-between w-full sm:w-auto gap-x-3'>
+        <div>
+            <Bars3Icon className='h-8 w-8' />
+        </div>
+        
+        <a href="/">
+            <Image src='/logos/icon.png' alt='Neumática valencia icono' width="45" height="45"/>
+        </a>
+     </div>
+
+    <ul class='hidden sm:flex font-bold gap-x-4'>
+        <li class='hover:text-primary cursor-pointer'>
+            <a href='/'>
+                Inicio
+            </a>
+        </li>
+        <li class='hover:text-primary cursor-pointer'>
+            <button onClick={() => setShowMenu(!showMenu)}>Productos</button>
+        </li>
+        <li class='hover:text-primary cursor-pointer'>
+            <a href='/sobre-nosotros'>
+                Sobre Nosotros
+            </a>
+        </li>
+        <li class='hover:text-primary cursor-pointer'>Contacto</li>
+    </ul>
+</nav>
