@@ -9,7 +9,7 @@ import LinesCarrousel from '@/components/ui/lines-carrousel';
 
 const fetchProducts = async () => {
 	try {
-		const response = await fetch('http://neumatica-bd.test/api/products');
+		const response = await fetch('https://test.nexocreate.com/api/products');
  	 	const data = await response.json();
   		// console.log(data);
 		return data.data
