@@ -1,4 +1,4 @@
-import { Dialog, Transition } from '@headlessui/react'
+import { Dialog, Disclosure, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // import SideMenuOptions from './side-menu-options'
 import { Fragment, useState } from 'react'
@@ -10,7 +10,7 @@ export function SideMenu() {
 	return (
 		<>
 			<button type='button' onClick={() => setOpen(true)}>
-				<Bars3Icon className='w-8 h-8' />
+				<Bars3Icon className='w-8 md:w-10 h-8 md:h-10' />
 			</button>
 
 			<Transition.Root show={open} as={Fragment}>
@@ -49,12 +49,12 @@ export function SideMenu() {
 													<div className='ml-3 flex h-7 items-center'>
 														<button
 															type='button'
-															className='relative -m-2 p-2 opacity-50 hover:opacity-100 '
+															className='relative -m-2 p-2  hover:text-primary'
 															onClick={() => setOpen(false)}
 														>
 															<span className='absolute -inset-0.5' />
 															<span className='sr-only'>Close panel</span>
-															<XMarkIcon className='h-6 w-6' aria-hidden='true' />
+															<XMarkIcon className='h-6 w-6 ' aria-hidden='true' />
 														</button>
 													</div>
 												</div>
@@ -77,7 +77,20 @@ export function SideMenu() {
 																	/>
 																</li>
 															))} */}
-															<SideMenuOptions name='Neumática' />
+															<SideMenuOptions name='Neumática'>
+																<Disclosure.Panel className='px-4 pb-2 pt-4 font-semibold'>
+																	Tratamiento de aire
+																</Disclosure.Panel>
+																<Disclosure.Panel className='px-4 pb-2 pt-4 font-semibold'>
+																	Control de aire
+																</Disclosure.Panel>
+																<Disclosure.Panel className='px-4 pb-2 pt-4 font-semibold'>
+																	Cilindros
+																</Disclosure.Panel>
+																<Disclosure.Panel className='px-4 pb-2 pt-4 font-semibold'>
+																	Válvulas solenoides
+																</Disclosure.Panel>
+															</SideMenuOptions>
 															<SideMenuOptions name='Refrigeración Industrial' />
 															<SideMenuOptions name='Hidráulica' />
 															<SideMenuOptions name='Servicios' />
