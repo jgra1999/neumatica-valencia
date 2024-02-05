@@ -29,7 +29,7 @@ export default () => {
 				modules={[Navigation]}
 			>
 				<SwiperSlide>
-					<CardLines name='Neumática' img_url='/product1.png' href='/' />
+					<CardLines name='Neumática' img_url='/icon-lineas.png' href='/' />
 				</SwiperSlide>
 				<SwiperSlide>
 					<CardLines
