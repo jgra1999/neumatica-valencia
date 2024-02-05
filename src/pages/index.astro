@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import { ChatBubbleLeftRightIcon, EnvelopeIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import Card from '@/components/Card.astro'
@@ -27,9 +26,9 @@ const data = await fetchProducts()
 		<div class='w-full mb-20 relative flex justify-center'>
 			<!-- <Carrousel client:load /> -->
 			<img
-				src='/hero.jpg'
+				src='/banner.png'
 				alt='hero image'
-				class='w-full h-auto max-h-[600px] aspect-[1536/600]'
+				class='w-full aspect-[1536/300]'
 			/>
 			<!-- <form class='w-3/4 md:w-1/2 absolute -bottom-5'>
 				<div class='flex items-center gap-x-3 bg-white py-3 px-4 rounded-md shadow-lg'>
@@ -46,8 +45,8 @@ const data = await fetchProducts()
 		<div class='w-11/12 m-auto'>
 			<!-- Categorias -->
 			<section class="w-full">
-				<h2 class='font-semibold text-2xl md:text-3xl mb-5'>
-					Nuestras Lineas
+				<h2 class='font-semibold text-2xl md:text-3xl mb-8 text-primary'>
+					Productos
 				</h2>
 				<div class="flex justify-center">
 					<LinesCarrousel client:load />
@@ -76,7 +75,7 @@ const data = await fetchProducts()
 			<!-- Marcas -->
 
 			<section class='my-10 border-y-[3px] border-secondary py-12'>
-				<h2 class='font-semibold text-2xl md:text-3xl mb-8'>Marcas</h2>
+				<h2 class='font-semibold text-2xl md:text-3xl mb-8 text-primary'>Marcas</h2>
 				<div class='flex flex-wrap justify-around items-center gap-10'>
 					<img
 						src='/logos/parker.png'
@@ -95,7 +94,7 @@ const data = await fetchProducts()
 			<section class='flex flex-col xl:flex-row gap-y-10 gap-x-20 pt-12 mb-20' id="contacto">
 				{/* Contact */}
 				<div class='flex flex-col gap-y-8'>
-					<h2 class='font-semibold text-2xl md:text-3xl'>Contáctenos</h2>
+					<h2 class='font-semibold text-2xl md:text-3xl text-primary'>Contáctenos</h2>
 					<p class='font-semibold text-lg'>
 						Comunícate con nosotros a través de nuestro correo electrónico o
 						nuestro Whatsapp.
