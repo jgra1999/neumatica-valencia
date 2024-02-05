@@ -1,16 +1,16 @@
 ---
-import { Image } from 'astro:assets';
 import { SideMenu } from './side-menu';
 ---
 
 <nav class='bg-white w-full flex justify-between items-center py-2 px-4 shadow-lg' >
-     <div class='flex gap-x-3'>
+     <div class='flex gap-x-3 items-center'>
         <div>
             <SideMenu client:visible />
         </div>
         
-        <a href="/">
-            <Image src='/logos/icon.png' alt='Neumática valencia icono' width="45" height="45"/>
+        <a href="/" class="flex gap-x-4 items-center">
+            <img src='/logos/icon.png' alt='Neumática valencia icono' class="h-8 md:h-16" />
+            <img src="/logos/nombre.png" alt="Neumática valencia icono" class="hidden md:block w-72">
         </a>
      </div>
 
