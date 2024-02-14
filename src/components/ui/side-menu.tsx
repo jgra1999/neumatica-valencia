@@ -79,16 +79,16 @@ export function SideMenu() {
 															))} */}
 															<SideMenuOptions name='Neumática'>
 																<Disclosure.Panel className='px-4 pb-2 pt-4 font-semibold'>
-																	Tratamiento de aire
+																	Tratamiento de Aire
 																</Disclosure.Panel>
 																<Disclosure.Panel className='px-4 pb-2 pt-4 font-semibold'>
-																	Control de aire
+																	Control de Aire
 																</Disclosure.Panel>
 																<Disclosure.Panel className='px-4 pb-2 pt-4 font-semibold'>
 																	Cilindros
 																</Disclosure.Panel>
 																<Disclosure.Panel className='px-4 pb-2 pt-4 font-semibold'>
-																	Válvulas solenoides
+																	Válvulas Solenoide
 																</Disclosure.Panel>
 															</SideMenuOptions>
 															<SideMenuOptions name='Refrigeración Industrial' />
