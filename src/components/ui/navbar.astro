@@ -1,36 +1,40 @@
 ---
-import { SideMenu } from './side-menu';
+import { SideMenu } from './side-menu'
 ---
 
-<nav class='bg-white w-full flex justify-between items-center p-4 shadow-lg' >
-     <div class='flex gap-x-3 items-center'>
-        <div>
-            <SideMenu client:visible />
-        </div>
-        
-        <a href="/" class="flex gap-x-4 items-center">
-            <img src='/logos/icon.png' alt='Neumática valencia icono' class="h-8 md:h-16" />
-            <img src="/logos/nombre.png" alt="Neumática valencia icono" class="hidden md:block w-72">
-        </a>
-     </div>
+<nav class='bg-white w-full flex justify-between items-center p-4 shadow-lg'>
+	<div class='flex gap-x-3 items-center'>
+		<div>
+			<SideMenu client:visible />
+		</div>
 
-     <div>
-        <img src="/logos/parker.png" alt="Logo parker" class='w-72 hidden md:block'>
-     </div>
+		<a href='/' class='flex gap-x-4 items-center'>
+			<img
+				src='/logos/icon.png'
+				alt='Neumática valencia icono'
+				class='h-8 md:h-16'
+			/>
+			<img
+				src='/logos/nombre.png'
+				alt='Neumática valencia icono'
+				class='hidden md:block w-72'
+			/>
+		</a>
+	</div>
 
-    <ul class='flex font-bold gap-x-4 text-xs sm:text-lg lg:text-xl'>
-        <li class='hover:text-primary cursor-pointer'>
-            <a href='/'>
-                Productos
-            </a>
-        </li>
-        <li class='hover:text-primary cursor-pointer'>
-            <a href='/sobre-nosotros'>
-                Sobre Nosotros
-            </a>
-        </li>
-        <li class='hover:text-primary cursor-pointer'>
-            <a href="#contacto">Contacto</a>
-        </li>
-    </ul>
+	<div>
+		<img src='/logos/parker.webp' alt='Logo parker' class='w-72 hidden md:block' />
+	</div>
+
+	<ul class='flex font-bold gap-x-4 text-xs sm:text-lg lg:text-xl'>
+		<li class='hover:text-primary cursor-pointer'>
+			<a href='/'> Productos</a>
+		</li>
+		<li class='hover:text-primary cursor-pointer'>
+			<a href='/sobre-nosotros'> Sobre Nosotros</a>
+		</li>
+		<li class='hover:text-primary cursor-pointer'>
+			<a href='#contacto'>Contacto</a>
+		</li>
+	</ul>
 </nav>
