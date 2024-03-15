@@ -10,7 +10,7 @@ import CardLines from '../CardLines'
 
 export default () => {
 	return (
-		<Carousel opts={{ loop: true }}>
+		<Carousel opts={{ loop: true }} className='w-full max-w-[75%] md:max-w-[85%]'>
 			<CarouselContent className='flex items-center'>
 				<CarouselItem className='md:basis-1/2 lg:basis-1/3 xl:basis-1/4'>
 					<CardLines name='Neumática' img_url='/lines/icon-lineas.png' href='/' />
@@ -29,8 +29,8 @@ export default () => {
 					<CardLines name='Servicios' img_url='/lines/icon-servicios.png' href='/' />
 				</CarouselItem>
 			</CarouselContent>
-			<CarouselPrevious />
-			<CarouselNext />
+			<CarouselPrevious className='xl:hidden' />
+			<CarouselNext className='xl:hidden' />
 		</Carousel>
 	)
 }

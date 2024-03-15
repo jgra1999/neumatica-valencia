@@ -15,7 +15,7 @@ export function BannersCarousel() {
 			opts={{ loop: true, active: true }}
 			onMouseDown={() => setCursor('cursor-grabbing')}
 			onMouseUp={() => setCursor('cursor-grab')}
-			className={`min-w-[100wv] ${cursor}`}
+			className={`${cursor}`}
 		>
 			<CarouselContent className='flex items-center'>
 				<CarouselItem className='w-full basis-full'>
@@ -47,8 +47,8 @@ export function BannersCarousel() {
 					/>
 				</CarouselItem>
 			</CarouselContent>
-			<CarouselPrevious />
-			<CarouselNext />
+			{/* <CarouselPrevious />
+			<CarouselNext /> */}
 		</Carousel>
 	)
 }
